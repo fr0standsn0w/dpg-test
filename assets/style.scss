@@ -114,7 +114,7 @@ html, body {
   font-weight: 400;
   width: 100%;
   line-height: 1;
-  font-size: calc(8px + (10 - 5)*((100vw - 320px) / (1920 - 320)));
+  font-size: calc(5px + (10 - 5)*((100vw - 320px) / (1920 - 320)));
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;}
@@ -198,6 +198,10 @@ body{
               padding-bottom: 7px;
               margin-top: 7px;
             }
+            textarea{
+              resize: none;
+              overflow: hidden;
+            }
           }
         }
         .inputContainer + .inputContainer{
@@ -242,5 +246,10 @@ body{
         }
       }
     }
+  }
+}
+@media screen and (max-width: 768px){
+  body{
+    font-size: calc(7px + (10 - 7)*((100vw - 320px) / (1920 - 320)));
   }
 }

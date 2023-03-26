@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const inputArr = Array.from(form)
 const validInputArr = [];
 
+
 inputArr.forEach((el) => {
     if (el.hasAttribute("data-reg")) {
         el.setAttribute("is-valid", "0")

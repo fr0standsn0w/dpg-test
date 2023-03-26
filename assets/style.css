@@ -103,7 +103,7 @@ html, body {
   font-weight: 400;
   width: 100%;
   line-height: 1;
-  font-size: calc(8px + (10 - 5)*((100vw - 320px) / (1920 - 320)));
+  font-size: calc(5px + (10 - 5)*((100vw - 320px) / (1920 - 320)));
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -198,6 +198,9 @@ body {
             color: white;
             padding-bottom: 7px;
             margin-top: 7px; }
+          .authContainer .authBody .auth .inputsContainer .inputContainer label textarea {
+            resize: none;
+            overflow: hidden; }
         .authContainer .authBody .auth .inputsContainer .inputContainer + .inputContainer {
           margin-top: 3.8em; }
       .authContainer .authBody .auth .terms {
@@ -230,5 +233,9 @@ body {
           width: 100%;
           max-width: 121px;
           padding: 11px 0; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: calc(7px + (10 - 7)*((100vw - 320px) / (1920 - 320))); } }
 
 /*# sourceMappingURL=style.css.map */
