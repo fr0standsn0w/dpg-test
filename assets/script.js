@@ -6,9 +6,6 @@ inputArr.forEach((el) => {
     if (el.hasAttribute("data-reg")) {
         el.setAttribute("is-valid", "0")
         validInputArr.push(el);
-    } else {
-        validInputArr.push(el)
-        el.setAttribute("is-valid", "1")
     }
 })
 
