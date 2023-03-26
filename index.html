@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="authContainer">
+    <div class="authBody">
+        <h1>Hello</h1>
+        <div class="auth">
+            <p>For business enquiries please use the form below</p>
+            <p class="requiredInfo">* Required</p>
+            <form action="" id="form" method="post">
+                <div class="inputsContainer">
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel">Name
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[A-zА-яA-ZÀ-ÿёЁ\u0600-\u06FF,-\s][\s\A-zА-яA-ZÀ-ÿёЁ\u0600-\u06FF,-]*$">
+                        </label>
+                    </div>
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel">Company
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[\S\s]+[\S]+">
+                        </label>
+                    </div>
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel">E-mail
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                        </label>
+                    </div>
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel" >Phone
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[0-9 , , +, (, ),.'-]+$">
+                        </label>
+                    </div>
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel">Subject
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[\S\s]+[\S]+">
+                        </label>
+                    </div>
+                    <div class="inputContainer">
+                        <label>
+                            <div class="inputLabel">Message
+                                <span>*</span>
+                            </div>
+                            <input class="formInput" type="text" data-reg="^[\S\s]+[\S]+">
+                        </label>
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" name="" id="checkbox" data-reg="">
+                    <span>I accept <a href="http://localhost:8080" target="_blank">Terms and Privacy Policy</a></span>
+                </div>
+                <div class="acceptBtn">
+                    <button id="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
